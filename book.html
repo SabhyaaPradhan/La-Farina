@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Farina</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/book.css">
+
+
+  <!-- Links -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <!-- NavBar -->
+
+  <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt="" style="height: 145px;"></a>
+
+
+  <header class="header">
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="book-menu"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+      <a href="index.html" style="--i:0;">Home</a>
+      <a href="#" style="--i:1;">Order Online</a>
+      <a href="menu.html" style="--i:2;">Menu</a>
+      <a href="#" style="--i:3;">Book A Table</a>
+      <a href="birthday.html" style="--i:4;">Kid's Birthday</a>
+      <a href="#" style="--i:5;">Contact Us</a>
+      <a href="#" style="--i:6;">Vouchers</a>
+      <a href="#"><button style="cursor: pointer;"><i class='bx bx-user'></i>&ensp; Login</button></a>
+    </nav>
+  </header>
+
+  <!-- book -->
+
+  <section class="flex justify-center pt-8 pb-20">
+    <div class="left-book mr-12 h-full px-12 py-12">
+      <div class="left-book-content flex justify-center items-center text-center">
+        <div class="contact-book">
+          <h1 class="book-header uppercase font-bold pb-5">Reservations</h1>
+          <h5 class="font-semibold text-xl pb-5">Book By Phone</h5>
+          <p class="text-base">You can contact us <br>on 03 546 9723. <br>Thank you.</p>
+          <p class="py-3">-------------------</p>
+          <h5 class="font-semibold text-xl pb-5">Make a booking now</h5>
+          <p class="text-base pb-5 max-w-80 flex justify-center items-center text-center">Please fill out the form with
+            your details and the size of your group. Feel free to let us know in advance if you have any special
+            requirements. <br><br>We will contact you by email to confirm your booking.</p>
+          <div class="logo-details">
+            <a href="#" class="flex justify-center"><img src="./assets/images/logo.png" alt="" style="height: 155px;"></a>
+          </div>
+          <div class="contact  px-5 py-5">
+
+            <h5 class="opening font-semibold text-lg">Opening Hours</h5>
+            <p class="opening-content text-base pb-5">Tuesday - Saturday</p>
+
+            <p class="opening-content text-base">Mondays, Sundays and <br> Public Holidays closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-book mr-12 h-full px-12 py-12 bg-[#1e1e1e] w-3/6">
+      <div class="main-book-content">
+        <h1 class="pb-3">Name</h1>
+        <input class="placeholder:italic placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black" placeholder="Enter your name ..." type="text" />
+        <h1 class="pb-3 pt-5">Email *</h1>
+        <input class="placeholder:italic placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black" placeholder="Enter your email ..." type="text" required />
+        <h1 class="pb-3 pt-5">Your Message *</h1>
+        <textarea rows="4" class="placeholder:italic placeholder:text-slate-400 bg-gray w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black" required placeholder="Write your message ..."></textarea>
+        <a href="#" class="pt-5 flex"><button type="button" class="text-black text-lg font-semibold bg-gradient-to-r from-white via-gray-100 to-gray-200 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 flex">Send</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="abs">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <a href="#"><img src="./assets/images/logo.png" alt="" style="height: 155px;"></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Location</li>
+          <li class="info">8 Tāhunanui Drive</li>
+          <li class="info">State Highway 6</li>
+          <li class="info">Nelson 7011</li>
+          <li class="info">New Zealand</li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Contact</li>
+          <li class="info">P: (64) 22 311 0466</li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Opening Hours</li>
+          <li class="info">Mon — Sun</li>
+          <li class="info">11:30am — 8pm</li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Socials</li>
+          <div class="socials">
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © <a href="#">TRDYtd.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
