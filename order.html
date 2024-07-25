@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Farina</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/order.css">
+
+
+    <!-- Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+
+    <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt="" style="height: 145px;"></a>
+
+
+    <header class="header">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Home</a>
+            <a href="order.html" style="--i:1;">Order Online</a>
+            <a href="menu.html" style="--i:2;">Menu</a>
+            <a href="book.html" style="--i:3;">Book A Table</a>
+            <a href="birthday.html" style="--i:4;">Kid's Birthday</a>
+            <a href="contact.html" style="--i:5;">Contact Us</a>
+            <a href="voucher.html" style="--i:6;">Vouchers</a>
+            <a href="login.html"><button style="cursor: pointer;"><i class='bx bx-user'></i>&ensp; Login</button></a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+
+    <section class="flex justify-center pt-8">
+
+        <div class="h-full px-12 py-12 bg-[#1e1e1e] w-3/4">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-lime-700">Please note:</h1>
+                <h1 class="text-3xl font-bold text-lime-700">There are no special requests available.</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="flex justify-center pt-8 pb-20">
+
+        <div class="h-full px-12 py-12 bg-[#1e1e1e] w-3/4">
+            <div class="">
+                <button class="border border-white p-5 text-white">Pickup, ASAP (in 40 minutes) &emsp;<a
+                        href="#" class="text-lime-700 underline decoration-solid">Change</a></button>
+            </div>
+
+            <div class="pt-6 border border-[#1e1e1e] border-b-white mb-10">
+
+                <div class="dropdown inline-block relative">
+                    <button class="bg-[#1e1e1e] text-white font-semibold py-2 px-6 border border-[#1e1e1e] border-r-white inline-flex items-center">
+                        <span class="mr-1 pr-16">Online Menu</span>
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li class=""><a
+                                class="bg-gray-200 hover:bg-gray-400 py-2 px-16 block whitespace-no-wrap"
+                                href="#">Online Menu</a></li>
+                    </ul>
+                </div>
+
+                
+                <a href="#starter" class="ml-5 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">STARTER</a>
+                <a href="#traditional" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">TRADITIONAL PIZZA</a>
+                <a href="#vegan" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">VEGAN PIZZA</a>
+                <a href="#gourment" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">GOURMENT PIZZA</a>
+                <a href="#salad" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">SALAD</a>
+                <a href="#pasta" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">PASTA</a>
+                <a href="#dessert" class="ml-2 text-base text-white font-semibold border-4 border-[#1e1e1e] py-2 hover:border-b-lime-700">DESSERT</a>
+
+                <a href="#" class="text-white text-2xl font-bold ml-2 relative top-1"><i class='bx bx-cart'></i> <span class="text-base bottom-1 relative">0</span></a>
+
+            </div>
+
+            <div class="text-white">
+                <h1 class="text-3xl font-bold">Online Menu</h1>
+                <h3 class="text-2xl mt-10" id="starter">STARTER</h3>
+            </div>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="traditional">TRADITIONAL PIZZA</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="vegan">VEGAN PIZZA</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="gourment">GOURMENT PIZZA</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="salad">SALAD</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="pasta">PASTA</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+            </div>
+
+            <h3 class="text-2xl mt-10 text-white" id="dessert">DESSERT</h3>
+            <p class="text-white text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, deserunt at dicta neque eveniet a voluptatum voluptas maiores corrupti blanditiis, ex aliquam dignissimos! Nesciunt, beatae. Reiciendis exercitationem accusantium ut.</p>
+
+            <div class="grid grid-cols-2 pt-5">
+                <button class="border border-[#d4d3d3] hover:bg-[#373737] text-start hover:border-white mb-5 px-10 py-3 mr-5">
+                    <h1 class="text-2xl font-bold text-white">Cheesy Grilled Pizza</h1>
+                    <p class="text-base text-white">Mozzarella cheese, garlic and sweet chilli sauce</p>
+
+                    <p class="text-lg pt-8 text-white">$11</p>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="abs">
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <a href="#"><img src="./assets/images/logo.png" alt="" style="height: 155px;"></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Location</li>
+                    <li class="info">8 Tāhunanui Drive</li>
+                    <li class="info">State Highway 6</li>
+                    <li class="info">Nelson 7011</li>
+                    <li class="info">New Zealand</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Contact</li>
+                    <li class="info">P: (64) 22 311 0466</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Opening Hours</li>
+                    <li class="info">Mon — Sun</li>
+                    <li class="info">11:30am — 8pm</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Socials</li>
+                    <div class="socials">
+                        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © <a href="#">TRDYtd.</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

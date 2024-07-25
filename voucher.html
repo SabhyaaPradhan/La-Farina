@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Farina</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+
+    <!-- Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- NavBar -->
+
+    <a href="#" class="logo"><img src="./assets/images/logo.jpg" alt="" style="height: 145px;"></a>
+
+
+    <header class="header">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="book-menu"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Home</a>
+            <a href="order.html" style="--i:1;">Order Online</a>
+            <a href="menu.html" style="--i:2;">Menu</a>
+            <a href="book.html" style="--i:3;">Book A Table</a>
+            <a href="birthday.html" style="--i:4;">Kid's Birthday</a>
+            <a href="contact.html" style="--i:5;">Contact Us</a>
+            <a href="voucher.html" style="--i:6;">Vouchers</a>
+            <a href="login.html"><button style="cursor: pointer;"><i class='bx bx-user'></i>&ensp; Login</button></a>
+        </nav>
+    </header>
+
+    <!-- Contact -->
+
+    <section class="flex justify-center pt-8 pb-20 text-white">
+
+        <div class="mr-12 h-full px-12 py-12 bg-[#1e1e1e] w-10/12 flex justify-between">
+            <a href="#"><img src="./assets/images/logo.png" alt="" style="height: 320px; margin-left: 80px;"></a>
+            <div class="w-3/6">
+                <h1 class="text-2xl font-bold justify-center flex mb-5">La Farina Vouchers</h1>
+
+                <h1 class="font-bold text-2xl pb-5">$25</h1>
+                <p>You can't go wrong with a gift voucher. Choose an amount and write a personalized message to make this gift your own.</p>
+                <h1 class="pb-3 pt-5">Amount</h1>
+                <div class="flex pb-5">
+                    <button
+                        class="border border-solid border-white px-5 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-1">$25</button>
+                        <button
+                        class="border border-solid border-white px-5 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-1">$50</button>
+                        <button
+                        class="border border-solid border-white px-5 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-1">$100</button>
+                        <button
+                        class="border border-solid border-white px-5 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-1">$150</button>
+                        <button
+                        class="border border-solid border-white px-5 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-1">$200</button>
+                    <button
+                        class="border border-solid border-white px-10 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 ">Other Amount</button>
+                </div>
+
+                <form class="w-full mx-auto">
+                    <label for="counter-input"
+                        class="block mb-1 text-base font-medium text-gray-900 dark:text-white">Choose quantity:</label>
+                    <div class="relative flex items-center">
+                        <button type="button" id="decrement-button" data-input-counter-decrement="counter-input"
+                            class="flex-shrink-0 bg-gray-100 dark:bg-[#1e1e1e] dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                            <svg class="w-2.5 h-2.5 text-gray-900 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h16" />
+                            </svg>
+                        </button>
+                        <input type="text" id="counter-input" data-input-counter
+                            class="flex-shrink-0 text-gray-900 dark:text-white border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
+                            placeholder="" value="0" required />
+                        <button type="button" id="increment-button" data-input-counter-increment="counter-input"
+                            class="flex-shrink-0 bg-gray-100 dark:bg-[#1e1e1e] dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                            <svg class="w-2.5 h-2.5 text-gray-900 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 1v16M1 9h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <h1 class="pb-3 pt-5">Who is this gift card for?</h1>
+                <div class="flex pb-5">
+                    <button
+                        class="border border-solid border-white px-10 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 mr-5">For
+                        Someone Else</button>
+                    <button
+                        class="border border-solid border-white px-10 py-2 hover:bg-lime-600 active:bg-lime-700 focus:outline-none focus:ring focus:ring-lime-300 ">For
+                        Myself</button>
+                </div>
+                <h1 class="pb-3">Recipient's Name</h1>
+                <input
+                    class="placeholder:italic placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black"
+                    placeholder="Enter your name ..." type="text" />
+                <h1 class="pb-3 pt-5">Recipient's Email *</h1>
+                <input
+                    class="placeholder:italic placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black"
+                    placeholder="Enter your email ..." type="text" required />
+
+                <h1 class="pb-3 pt-5">Delivery Date</h1>
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-slate-500 dark:text-slate-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                    </div>
+                    <input datepicker id="default-datepicker" type="text"
+                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Select date">
+                </div>
+
+                <h1 class="pb-3 pt-5">Your Message</h1>
+                <textarea rows="4"
+                    class="placeholder:italic placeholder:text-slate-400 bg-gray w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black"
+                    placeholder="Write your message ..."></textarea>
+                
+                <button class="text-center w-full mt-5 bg-white text-black py-3 font-bold">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="abs">
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <a href="#"><img src="./assets/images/logo.png" alt="" style="height: 155px;"></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Location</li>
+                    <li class="info">8 Tāhunanui Drive</li>
+                    <li class="info">State Highway 6</li>
+                    <li class="info">Nelson 7011</li>
+                    <li class="info">New Zealand</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Contact</li>
+                    <li class="info">P: (64) 22 311 0466</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Opening Hours</li>
+                    <li class="info">Mon — Sun</li>
+                    <li class="info">11:30am — 8pm</li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Socials</li>
+                    <div class="socials">
+                        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © <a href="#">TRDYtd.</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
